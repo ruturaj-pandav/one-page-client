@@ -1,5 +1,49 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw; */
+  /* width: 100vw;
+  height: 100%;*/
+
+
+
+}
+
+
+
+.typed-out {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation: typing 1s forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+body {
+
+
+  /* background-image: linear-gradient( 95.2deg, rgb(199, 252, 241) 26.8%, rgb(203, 244, 255)64% ); */
+  /* background: rgb(209, 206, 255);
+  
+  background: radial-gradient(circle, rgb(241, 241, 245) 0%, rgb(227, 245, 236) 0%, rgb(215, 234, 225) 11%, rgb(232, 242, 236) 20%, rgba(210, 254, 230, 1) 23%, rgb(250, 245, 245) 100%); */
 }
 
 .App-logo {
@@ -7,11 +51,884 @@
   pointer-events: none;
 }
 
+
+
+
+
+
+/* #adminLogin {
+  width: 30vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 50px;
+}
+
+#adminLogin #inputsDiv {
+
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+/* 
+#adminLogin #inputsDiv input {
+
+  font-size: 15px;
+  padding: 6px 15px;
+  text-align: center;
+  height: 30px;
+  margin: 7px 0px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid grey;
+  color: rgb(81, 77, 77);
+}
+
+#adminLogin #buttonDiv #adminLoginButton {
+  font-size: 15px;
+  height: 30px;
+  padding: 6px 25px;
+
+}
+
+#adminLogin #buttonDiv {
+
+  margin: 15px 0px;
+
+}
+
+
+#aboutus {
+
+  width: 60vw;
+  margin: auto;
+  padding-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#aboutus div {
+  height: 50vh
+}
+
+#aboutus div #logoimage {
+  height: 100%;
+}
+
+#aboutus #aboutUsDescription {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  text-align: left;
+
+}
+
+#footer {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 50px;
+
+}
+
+#footer .footerLinksDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+#footer .footerLinksDiv span {
+
+  color: grey;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 3px 0px;
+
+}
+
+#footer .footerLinksDiv span:hover {
+  transform: scale(1.05)
+}
+
+#footer .footerSubDivHeading {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+#admindashboard {
+  width: 80vw;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+#admindashboard #statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 50px;
+  border: 2px solid black
+}
+
+#admindashboard #statistics .statisticDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px 20px;
+  padding: 10px 20px;
+}
+
+#admindashboard #statistics .statisticDiv .statisticHeader {
+  font-size: 30px;
+  font-weight: 600;
+
+}
+
+#admindashboard #statistics .statisticDiv .statisticNumber {
+  font-size: 30px;
+
+
+}
+
+#admindashboard #tableDiv table {
+  width: 100%;
+  margin: auto;
+
+}
+
+
+
+
+#admindashboard #tableDiv table,
+#admindashboard #tableDiv th,
+#admindashboard #tableDiv td {
+  border: 1px solid rgb(143, 139, 139);
+  padding: 15px 10px;
+  text-align: left;
+
+  border-collapse: collapse;
+}
+
+#admindashboard #tableDiv th {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+#admindashboard .editButton {
+
+
+  background-color: orange;
+  border: none;
+  color: white;
+
+
+  margin: 0px 5px;
+  font-size: 18px;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  cursor: pointer
+}
+
+#admindashboard .deleteButton {
+
+  background-color: rgb(245, 73, 21);
+  border: none;
+  color: white;
+
+  margin: 0px 5px;
+
+  font-size: 18px;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  cursor: pointer
+}
+
+#admindashboard .viewButton {
+
+  background-color: rgb(11, 231, 18);
+  border: none;
+  color: rgb(5, 5, 5);
+
+
+  margin: 0px 5px;
+  font-size: 18px;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  cursor: pointer
+}
+
+#admindashboard #addNewQuoteButton {
+  outline: none;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin-top: 20px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  color: white
+}
+
+#admindashboard button:hover {
+  font-size: 20px;
+}
+
+#admindashboard #addNewQuoteDiv {
+  margin-top: 30px;
+  padding: 20px 0px;
+  border-bottom: 2px solid grey;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#admindashboard #addNewQuoteDiv #inputsDiv input {
+
+  border: none;
+  outline: none;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 5px 0px;
+  margin: 0px 3px;
+  font-size: 13px;
+
+}
+
+#admindashboard #addNewFactDiv #inputsDiv input {
+
+  border: none;
+  outline: none;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 5px 0px;
+  margin: 0px 3px;
+  font-size: 13px;
+
+}
+
+#admindashboard #addNewFactDiv #inputsDiv {
+  width: 90%;
+  margin: auto;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+
+}
+
+#admindashboard #addNewQuoteDiv #closeButton {
+
+  font-size: 10px;
+  padding: 3px 5px;
+  margin-top: 10px;
+  background-color: rgb(243, 106, 106);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#admindashboard #addNewQuoteDiv #closeButton:hover {
+
+  font-size: 12px;
+
+}
+
+#factsDiv #addNewFactDiv #closeButton:hover {
+
+  font-size: 12px;
+
+}
+
+#admindashboard #addNewQuoteDiv #addQuoteButton {
+
+  font-size: 20px;
+  padding: 10px 15px;
+
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+
+#quotesDiv {
+  border: 2px solid black;
+  padding: 50px 20px;
+  margin: 30px 0px;
+}
+
+#factsDiv {
+  border: 2px solid black;
+  padding: 50px 20px;
+  margin: 30px 0px;
+}
+
+#usersDiv {
+  border: 2px solid black;
+  padding: 50px 20px;
+  margin: 30px 0px;
+}
+
+#feedbackDiv {
+  border: 2px solid black;
+  padding: 50px 20px;
+  margin: 30px 0px;
+}
+
+#admindashboard #quotesDiv select {
+  font-size: 20px;
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid grey;
+  transition: all 0.3s;
+
+}
+
+#admindashboard #quotesDiv select option {
+  background-color: rgb(254, 236, 218);
+  outline: none;
+  border-radius: 0px;
+
+}
+
+#admindashboard #quotesDiv #filterDiv {
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+
+#admindashboard #factsDiv #filterDiv {
+  display: flex;
+  align-items: right;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+
+}
+
+#admindashboard #quotesDiv #filterDiv input {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 14px;
+  height: 100%;
+  margin-right: 15px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid black;
+
+}
+
+#admindashboard #factsDiv #filterDiv input {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 14px;
+  height: 100%;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid black;
+
+}
+
+#contactus {
+  width: 40vw;
+  padding: 30px;
+  margin: auto;
+  margin-top: 30px;
+  text-align: left;
+}
+
+#contactus #sendFeedbackHeading {
+  font-size: 30px;
+  font-weight: 600;
+
+
+}
+
+#contactus #inputDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#contactus #inputDiv input,
+#contactus #inputDiv textarea {
+  font-size: 15px;
+  margin: 5px 0px;
+  text-align: center;
+  outline: none;
+  border: 3px solid rgb(225, 225, 225);
+  padding: 10px 0px;
+  border-radius: 4px;
+}
+
+#contactus #sendButton {
+  background-color: blue;
+  border: none;
+  padding: 10px 25px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  border-radius: 2px;
+
+}
+
+#contactus #enterEverythingSpan {
+  font-size: 16px;
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+
+
+
+}
+
+#contactus #feedbackSpan {
+  font-size: 16px;
+  text-align: center;
+  background-color: rgb(12, 203, 12);
+  color: white;
+  border-radius: 3px;
+  padding: 10px 20px;
+
+
+
+}
+
+
+#feedbackDiv {
+  margin-top: 50px;
+}
+
+#feedbackDiv #replyToFeedbackButton {
+  background-color: orange;
+  border: none;
+  color: white;
+
+
+  margin: 0px 5px;
+  font-size: 18px;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  cursor: pointer
+}
+
+#feedbackDiv #deleteFeedbackButton {
+
+  background-color: rgb(245, 73, 21);
+  border: none;
+  color: white;
+
+  margin: 0px 5px;
+
+  font-size: 18px;
+  padding: 5px 20px;
+  transition: all 0.3s;
+  cursor: pointer
+}
+
+#feedbackDiv #replyToFeedbackButton:hover {
+  font-size: 20px;
+}
+
+#feedbackDiv #deleteFeedbackButton:hover {
+  font-size: 20px;
+}
+
+#login {
+  width: 40vw;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+#login #inputsDiv {
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#login #inputsDiv input {
+  font-size: 14px;
+  outline: none;
+  text-align: center;
+  border-radius: 2px;
+  padding: 10px 0px;
+  margin: 5px 0px;
+  border: 1px solid grey;
+}
+
+#login #invalidCredentials {
+  
+  font-size: 16px;
+  font-weight: 400;
+  color: red
+}
+
+#login #emptySpan {
+  font-size: 16px;
+  font-weight: 400;
+  color: red
+}
+
+#login #loginButton {
+  background-color: green;
+  font-size: 18px;
+  padding: 10px 25px;
+  cursor: pointer;
+  color: white;
+  margin-top: 15px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+#login #linksDiv {
+  color: blue;
+
+  margin-top: 10px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row
+}
+
+
+#navbar1 {
+  background-color: black;
+  color: white;
+  font-size: 21px;
+  padding: 20px 0px;
+
+}
+
+#navbar1 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+}
+
+#navbar1 div #contentsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#navbar1 div #contentsDiv span {
+  margin: 0px 20px;
+  font-size: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+#navbar1 div #contentsDiv span:hover {
+  font-size: 22px
+}
+
+#navbar1 div #buttonsDiv button {
+  width: 100%;
+
+  font-size: 20px;
+
+}
+
+#navbar1 div #buttonsDiv #loginButton {
+  background-color: rgba(255, 0, 0, 0.407);
+  margin: 0px 15px;
+  padding: 4px 15px;
+  border-radius: 5px;
+  color: white;
+
+
+}
+
+#navbar1 div #buttonsDiv #registerButton {
+  color: rgba(255, 0, 0, 0.763);
+  margin: 0px 15px;
+  border: 1px solid rgba(255, 0, 0, 0.763);
+
+  background-color: transparent;
+  padding: 4px 15px;
+  border-radius: 5px;
+
+
+
+}
+
+#navbar2 {
+  background-color: rgb(247, 232, 232);
+}
+
+#navbar2 div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+ 
+  margin: auto;
+  width: 60vw;
+
+}
+
+#navbar2 span {
+  font-size: 20px;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#navbar2 span:hover {
+  font-size: 22px;
+}
+
+#factsDiv {
+
+  margin: 30px 0px;
+}
+
+#factsDiv #addNewFactButton {
+  outline: none;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin-top: 20px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  color: white
+}
+
+#factsDiv #closeButton {
+  font-size: 10px;
+  padding: 3px 5px;
+  margin-top: 10px;
+  background-color: rgb(243, 106, 106);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#factsDiv #addNewFactDiv {
+  margin-top: 30px;
+  padding: 20px 0px;
+  border-bottom: 2px solid grey;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#factsDiv_user {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 80vw;
+  margin: auto;
+}
+
+#quotesDiv_user {
+
+  width: 70vw;
+
+  margin: auto;
+}
+
+#factsDiv_user #leftDiv {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#quotesDiv_user #leftDiv {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+#factsDiv_user #rightDiv {
+ 
+  display: flex;
+  align-items: top;
+  justify-content: top;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+#quotesDiv_user #upperDiv {
+ 
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+#quotesDiv_user #upperDiv #quoteOfTheDay{
+
+}
+#quotesDiv_user #upperDiv #quoteOfTheDay #quoteOfTheDay_author{
+ 
+  font-size : 18px;
+  font-style:italic;
+  color:rgb(92, 86, 86);
+}
+
+#factsDiv_user #rightDiv #noOfFacts {
+
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column
+}
+
+#factsDiv_user #rightDiv #noOfFacts #totalNoOfFactsSpan {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+#factsDiv_user #rightDiv #factTags {
+ 
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column
+}
+
+#factsDiv_user #leftDiv #factOfTheDay {
+  border-bottom: 1px solid rgb(225, 215, 196);
+  
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+  padding: 10px 0px;
+  padding-left: 20px;
+ 
+}
+
+#factsDiv_user #leftDiv #factOfTheDay #factOfTheDay_title {
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  display: block;
+  margin: 10px 0px;
+
+}
+
+#factsDiv_user #leftDiv #factOfTheDay #factOfTheDay_description {
+  display: block;
+  font-size: 18px;
+  margin: 5px 0px;
+
+
+}
+
+#factsDiv_user #leftDiv #factOfTheDay #factOfTheDay_tags {
+  display: block;
+ 
+
+}
+
+#factsDiv_user #leftDiv #factOfTheDay #factOfTheDay_tags #factOfTheDay_individualTag {
+
+  font-size: 18px;
+  margin: 5px 0px;
+  color: blue;
+  font-weight: 500;
+  margin: 0px 5px;
+  transition: all 0.3s;
+
+}
+
+#factsDiv_user #leftDiv #factOfTheDay #factOfTheDay_tags #factOfTheDay_individualTag:hover {
+
+  font-size: 20px;
+
+
+}
+
+#factsDiv_user #leftDiv #allFacts {
+
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 50px;
+
+}
+
+#factsDiv_user #leftDiv #allFacts #factTitle {
+  width: 100%;
+  display: block;
+
+  font-size: 28px;
+  font-weight: 600;
+
+  margin: 15px 0px;
+
+}
+
+#factsDiv_user #leftDiv #allFacts #factDescription {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+
+}
+
+#factsDiv_user #leftDiv #allFacts #factTags {
+  display: block;
+  font-weight: 500;
+  margin-top: 10px;
+  color: rgb(15, 15, 167);
+  padding-bottom: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-bottom: 3px solid rgb(206, 199, 199);
+
+
+
+}
+
+#factsDiv_user #leftDiv #allFacts #factTags #factIndividual {
+  font-size: 16px;
+  transition: all 0.6s;
+  margin: 0px 5px;
+
+
+}
+
+#factsDiv_user #leftDiv #allFacts #factTags #factIndividual:hover {
+  font-size: 18px;
+
+
+
+} */
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
 
 .App-header {
   background-color: #282c34;
@@ -32,6 +949,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
